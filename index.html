@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1><center>Welcome!</h1>
+
+<center><img id="myImg" src="2.jpg" alt="The World" width="800" height="228">
+
+<h3>It is currently..</h3>
+
+<p id="demo"></p>
+
+<script>
+var myDate = new Date();
+var name = window.prompt("Please enter your name: ")
+
+if (myDate.getHours() < 12) {
+    document.write("Good Morning " +name);
+}
+else if(myDate.getHours() >=12 && myDate.getHours() <=17){
+    document.write("Good Afternoon " +name);
+}
+else if (myDate.getHours() > 17 && myDate.getHours() <=24) {
+    document.write("Good Evening " +name);
+}
+else
+{
+    document.write("Good Night");
+}
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+
+</script>
+
+<p>What color do you like?</p>
+<script>
+
+body {
+  background-Color: rgb(100,149,237);
+  background-Color: #DDA0DD;
+  background-Color: #AFEEEE
+}
+</script>
+
+<button onclick="document.body.style.backgroundColor = 'rgb(100,149,237)';">Blue</button>
+<button onclick="document.body.style.backgroundColor = '#DDA0DD';">Purple</button>
+<button onclick="document.body.style.backgroundColor = '#AFEEEE';">Turquoise</button>
+
+
+
+</body>
+</html>
